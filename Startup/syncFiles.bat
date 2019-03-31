@@ -8,6 +8,7 @@ REM Dependancies:  pypi's dirsync
 
 call setRepoDir
 
+git pull
 dirsync %repoDir%\Startup "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup" -s -c -o "syncFiles.bat | .*\.ahk"
 dirsync %repoDir%\nvim "%USERPROFILE%\AppData\Local\nvim" -s -c -o "init.vim"
 
