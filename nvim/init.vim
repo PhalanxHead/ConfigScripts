@@ -8,9 +8,7 @@ if has('unix')
     set rtp+=~/.config/nvim/bundle/Vundle.vim
 endif
 
-if has('win32')
-    set rtp+=%USERPROFILE%/AppData/Local/nvim/bundle/Vundle.vim
-endif
+set rtp+=%USERPROFILE%\AppData\Local\nvim\bundle\Vundle.vim
 
 call vundle#begin()            " required
 
