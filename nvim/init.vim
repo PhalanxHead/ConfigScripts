@@ -1,0 +1,3 @@
+" init.vim
+
+set nocompatible
