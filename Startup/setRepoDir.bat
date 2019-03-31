@@ -6,5 +6,3 @@ REM Usage:      Change the RepoDir to where the repo abosolute location is befor
 REM             firstTime.bat
 
 SET repoDir=D:\ConfigScripts
-
-pause
