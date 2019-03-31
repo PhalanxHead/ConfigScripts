@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='C:\Users\lhedt\AppData\Roaming\npm\node_modules\nyaovim'
+let g:netrw_dirhist_2='C:/Users/lhedt/AppData/Roaming/npm/node_modules/nyaovim/node_modules'
+let g:netrw_dirhist_3='C:/Users/lhedt/AppData/Roaming/npm/node_modules/nyaovim'
+let g:netrw_dirhist_4='C:/Users/lhedt/AppData/Roaming/npm/node_modules'
+let g:netrw_dirhist_5='C:/Users/lhedt/AppData/Roaming/npm'
+let g:netrw_dirhist_6='C:/Users/lhedt/AppData/Roaming'
+let g:netrw_dirhist_7='C:/Users/lhedt/AppData/Roaming/Electron'
+let g:netrw_dirhist_8='C:/Users/lhedt/AppData/Roaming'
