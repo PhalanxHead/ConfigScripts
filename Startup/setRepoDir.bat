@@ -5,4 +5,4 @@ REM Purpose:    Sets the location of the Repo to sync with
 REM Usage:      Change the RepoDir to where the repo abosolute location is before you run
 REM             firstTime.bat
 
-SET repoDir=D:\ConfigScripts
+SET repoDir=C:\Users\lhedt\Documents\ConfigScripts
