@@ -6,12 +6,12 @@ REM Usage:      Change the RepoDir to where you have cloned the Repo to in your 
 REM             This file will run on all startups, and via the AHK script when you press CTRL+ALT+|
 REM Dependancies:  pypi's dirsync
 
-SET repoDir = "D:\ConfigScripts\"
+SET repoDir = D:\ConfigScripts\
 
-dirsync "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup" repoDir+"\Startup" -s -o "*.ahk|syncFiles.bat"
-dirsync "%USERPROFILE%\AppData\Local\nvim" repoDir+"\nvim" -s -o "init.vim"
+dirsync "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup" %repoDir%+"\Startup" -s -o "*.ahk|syncFiles.bat"
+dirsync "%USERPROFILE%\AppData\Local\nvim" %repoDir%+"\nvim" -s -o "init.vim"
 
-cd reopDir
+cd %reopDir%
 git add .
 git commit -am "File Sync"
 git push -u origin master
