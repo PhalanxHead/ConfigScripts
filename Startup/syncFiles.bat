@@ -10,10 +10,10 @@ call setRepoDir
 
 git pull
 dirsync %repoDir%\Startup "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup" -s -c -o "syncFiles.bat | .*\.ahk"
-dirsync %repoDir%\nvim "%USERPROFILE%\AppData\Local\nvim" -s -c -o "init.vim"
+dirsync %repoDir%\nvim "%USERPROFILE%\AppData\Local\nvim" -s -c
 
 dirsync "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup" %repoDir%\Startup -s -c -o "syncFiles.bat | .*\.ahk"
-dirsync "%USERPROFILE%\AppData\Local\nvim" %repoDir%\nvim -s -c -o "init.vim"
+dirsync "%USERPROFILE%\AppData\Local\nvim" %repoDir%\nvim -s -c
 
 cd %repoDir%
 git add *

@@ -15,6 +15,10 @@ choco install autohotkey.install -y
 choco install python3 -y
 choco install neovim -y
 choco install vscode -y
+choco install curl -y
+choco install vcredist2015 -y
+
+npm install -g nyaovim
 
 pip install dirsync
 

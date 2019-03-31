@@ -8,7 +8,11 @@ xcopy "setRepoDir.bat" "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup"
 
 REM Sync directories 
 dirsync "Startup" "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup" -s -c -o "\*\.ahk|syncFiles.bat"
-dirsync "nvim" "%USERPROFILE%\AppData\Local\nvim" -s -c -o "init.vim"
+dirsync "nvim" "%USERPROFILE%\AppData\Local\nvim" -s -c
+
+git clone https://github.com/VundleVim/Vundle.vim.git "%USERPROFILE%\AppData\Local\nvim\bundle\Vundle.vim"
+
+nvim +PluginInstall +qall
 
 git config --global user.name = "PhalanxHead"
 git config --global user.email = "lhedt@hotmail.com"
