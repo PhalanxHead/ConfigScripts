@@ -17,6 +17,6 @@ dirsync "%USERPROFILE%\AppData\Local\nvim" %repoDir%\nvim -s -o "init.vim"
 cd %reopDir%
 git add .
 git commit -am "File Sync"
-git push -u origin master
+REM git push -u origin master
 
 pause
